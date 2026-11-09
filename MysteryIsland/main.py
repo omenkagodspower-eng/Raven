@@ -202,12 +202,6 @@ while True:
 
             bridge_decision_made = True
 
-
-        print(f"Your inventory: {inventory}")
-
-        print(f"Current location: {location}")
-        print(f"Energy remaining: {energy}")
-
         game["location"] = location
         game["energy"] = energy
         game["inventory"] = inventory
@@ -218,9 +212,11 @@ while True:
             break
 
         elif is_win(game):
+            print(f"Energy remaining: {energy}")
             print("Congratulations! You have escaped Mystery Island!🥳")
             print("YOU WIN!")
             print("✅🎉")
+            print("Your adventure has come to an end🤠")
             break
 
     while True:
